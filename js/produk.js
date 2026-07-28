@@ -3,7 +3,7 @@
 // ========================================
 const products = [
     { id: 1, name: 'Jamur Tiram Segar', category: 'jamur', description: 'Jamur tiram segar berkualitas tinggi, dibudidayakan secara organik.', image: 'img/jamur/Jamur tiram segar.png' },
-    { id: 2, name: 'Ikan Nila Segar', category: 'perikanan', description: 'Ikan nila segar dari kolam budidaya berkualitas.', image: 'img/perikanan/Ikan Nila Segar.png' },
+    { id: 2, name: 'Ikan Nila Segar', category: 'perikanan', description: 'Ikan nila segar dari kolam budidaya berkualitas.', image: 'img/perikanan/Ikan nila segar.png' },
     { id: 3, name: 'Keripik Jamur Tiram Original', category: 'olahan', description: 'Keripik jamur tiram renyah dengan rasa original yang gurih.', image: 'img/olahan/Keripik jamur tiram rasa original.png' },
     { id: 4, name: 'Keripik Jamur Tiram Balado', category: 'olahan', description: 'Keripik jamur tiram pedas dengan bumbu balado khas.', image: 'img/olahan/Keripik jamur tiram rasa balado.png' },
     { id: 5, name: 'Keripik Jamur Tiram Coklat', category: 'olahan', description: 'Keripik jamur tiram dengan rasa coklat manis dan renyah.', image: 'img/olahan/Keripik jamur tiram rasa coklat.png' },
