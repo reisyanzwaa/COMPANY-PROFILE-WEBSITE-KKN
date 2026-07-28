@@ -90,7 +90,7 @@ function getCategoryLabel(category) {
     return labels[category] || category;
 }
 
-function getProductById(id) {
+function  getProductById(id) {
     return products.find(function(p) { return p.id === parseInt(id); });
 }
 
