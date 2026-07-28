@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWT "BERSERI" | Detail Produk</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/detail_produk.css">
+    <link rel="stylesheet" href="css/option_wheel.css">
+        <div class="preloader-container">
+            <div class="preloader-ring"><div class="preloader-ring-inner"></div></div>
+            <div class="preloader-progress"><div class="preloader-progress-fill" id="preloaderFill"></div></div>
+            <div class="preloader-dots"><span></span><span></span><span></span></div>
+            <p class="preloader-label">KWT "BERSERI"</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="brand">
+                <div class="brand-icon">
+                    <img src="img/logo/kwt logo.svg" alt="KWT BERSERI">
+                    <div class="brand-shine"></div>
+                    <div class="brand-ring"></div>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">KWT <span>"BERSERI"</span></span>
+                    <span class="brand-sub">Kelompok Wanita Tani</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">
+                    <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1"/></svg></span>
+                    <span class="nav-text">Beranda</span>
+                    <span class="nav-indicator"></span>
+                </a></li>
+                <li><a href="profil.html">
+                    <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg></span>
+                    <span class="nav-text">Profil</span>
+                    <span class="nav-indicator"></span>
+                </a></li>
+                <li><a href="katalog.html" class="active">
+                    <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></span>
+                    <span class="nav-text">Katalog</span>
+                    <span class="nav-indicator"></span>
+                </a></li>
+                <li><a href="galeri.html">
+                    <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></span>
+                    <span class="nav-text">Galeri</span>
+                    <span class="nav-indicator"></span>
+                </a></li>
+                <li><a href="kontak.html">
+                    <span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></span>
+                    <span class="nav-text">Kontak</span>
+                    <span class="nav-indicator"></span>
+                </a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="kontak.html" class="btn-nav btn-nav-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    <span>Hubungi</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ============================================================
+        DETAIL PRODUK
+        ============================================================ -->
+        <section class="detail-produk">
+            <div class="container">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    <a href="index.html">Beranda</a>
+                    <span>/</span>
+                    <a href="katalog.html">Katalog</a>
+                    <span>/</span>
+                    <span class="current">Keripik Jamur Tiram</span>
+                </div>
+
+                <div class="detail-grid">
+                    <!-- ===== GAMBAR PRODUK ===== -->
+                    <div class="detail-image">
+                        <div class="image-wrapper">
+                            <img src="img/olahan/Keripik jamur tiram rasa original.png" alt="Keripik Jamur Tiram" id="mainImage">
+                            <span class="badge-produk">Populer</span>
+                            <div class="image-shine"></div>
+                        </div>
+                        <!-- Thumbnail Varian -->
+                        <div class="thumbnail-list">
+                            <button class="thumb-item active" data-image="img/olahan/Keripik jamur tiram rasa original.png" data-varian="Original">
+                                <img src="img/olahan/Keripik jamur tiram rasa original.png" alt="Original">
+                                <span>Original</span>
+                            </button>
+                            <button class="thumb-item" data-image="img/olahan/Keripik jamur tiram rasa balado.png" data-varian="Balado">
+                                <img src="img/olahan/Keripik jamur tiram rasa balado.png" alt="Balado">
+                                <span>Balado</span>
+                            </button>
+                            <button class="thumb-item" data-image="img/olahan/Keripik jamur tiram rasa coklat.png" data-varian="Coklat">
+                                <img src="img/olahan/Keripik jamur tiram rasa coklat.png" alt="Coklat">
+                                <span>Coklat</span>
+                            </button>
+                            <button class="thumb-item" data-image="img/olahan/Keripik jamur tiram rasa jagung bakar.png" data-varian="Jagung Bakar">
+                                <img src="img/olahan/Keripik jamur tiram rasa jagung bakar.png" alt="Jagung Bakar">
+                                <span>Jagung</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- ===== INFO PRODUK ===== -->
+                    <div class="detail-info">
+                        <span class="kategori-tag">Olahan</span>
+                        <h1 id="productName">Keripik Jamur Tiram</h1>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(125 ulasan)</span>
+                        </div>
+                        <p class="deskripsi" id="productDesc">Keripik jamur tiram dengan pilihan 4 varian rasa: Original, Balado, Coklat, dan Jagung Bakar. Renyah, gurih, dan cocok untuk camilan sehat keluarga.</p>
+
+                        <!-- ===== PILIHAN VARIAN RASA ===== -->
+                        <div class="varian-section">
+                            <h4>🍿 Pilihan Varian Rasa</h4>
+                            <div class="varian-options">
+                                <button class="varian-btn active" data-varian="Original" data-image="img/olahan/Keripik jamur tiram rasa original.png" data-desc="Keripik jamur tiram rasa original dengan cita rasa gurih alami.">
+                                    <span class="varian-dot original"></span>
+                                    Original
+                                </button>
+                                <button class="varian-btn" data-varian="Balado" data-image="img/olahan/Keripik jamur tiram rasa balado.png" data-desc="Keripik jamur tiram pedas dengan bumbu balado khas.">
+                                    <span class="varian-dot balado"></span>
+                                    Balado
+                                </button>
+                                <button class="varian-btn" data-varian="Coklat" data-image="img/olahan/Keripik jamur tiram rasa coklat.png" data-desc="Keripik jamur tiram dengan rasa coklat manis dan renyah.">
+                                    <span class="varian-dot coklat"></span>
+                                    Coklat
+                                </button>
+                                <button class="varian-btn" data-varian="Jagung Bakar" data-image="img/olahan/Keripik jamur tiram rasa jagung bakar.png" data-desc="Keripik jamur tiram dengan rasa jagung bakar yang gurih.">
+                                    <span class="varian-dot jagung"></span>
+                                    Jagung Bakar
+                                </button>
+                            </div>
+                            <p class="varian-desc" id="varianDesc">Keripik jamur tiram rasa original dengan cita rasa gurih alami.</p>
+                        </div>
+
+                        <!-- ===== SPESIFIKASI ===== -->
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="label">Kategori</span>
+                                <span class="value">Olahan</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="label">Berat</span>
+                                <span class="value">100 gr</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="label">Sertifikasi</span>
+                                <span class="value">Halal</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="label">Stok</span>
+                                <span class="value in-stock">Tersedia</span>
+                            </div>
+                        </div>
+
+                        <!-- ===== TOMBOL ===== -->
+                        <div class="action-buttons">
+                            <button class="btn-wa-order" id="waOrderBtn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                                </svg>
+                                Pesan via WhatsApp
+                            </button>
+                            <a href="katalog.html" class="btn-kembali">← Kembali</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        PRODUK TERKAIT
+        ============================================================ -->
+        <section class="related-products">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-tag">Produk Terkait</span>
+                    <h2>Produk <span class="text-gradient">Lainnya</span></h2>
+                </div>
+                <div class="products-grid" id="relatedGrid">
+                    <!-- Akan diisi oleh JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- CTA         -->
+        <!-- ======================================== -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="cta-content">
+                        <span class="cta-tag">✦ Belanja Sekarang</span>
+                        <h2>Dapatkan <span class="text-gradient">Produk Segar</span> Langsung dari Petani!</h2>
+                        <p class="cta-desc">
+                            <strong>Jamur tiram segar, ikan nila berkualitas, dan olahan keripik renyah</strong> 
+                            siap untuk Anda. <strong>Harga terjangkau, kualitas terjamin!</strong> 
+                            Pesan sekarang dan rasakan kesegaran produk kami.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="kontak.html" class="btn-primary btn-lg">
+                                Pesan Sekarang
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="katalog.html" class="btn-outline-light btn-lg">
+                                Lihat Produk
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+    <!-- DECORATIVE -->
+    <div class="footer-strip"></div>
+    <div class="glow-orb glow-orb--1"></div>
+    <div class="glow-orb glow-orb--2"></div>
+    <div class="grid-pattern"></div>
+
+    <!-- FOOTER TOP -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- ===== KOLOM 1: BRAND & DESKRIPSI ===== -->
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <div class="brand-icon">
+                            <img src="img/profil/LOGO KWT BERSERI.png" alt="KWT Berseri">
+                        </div>
+                        <div class="brand-text">
+                            <span class="brand-name">KWT <span class="highlight">"BERSERI"</span></span>
+                            <span class="brand-sub">Kelompok Wanita Tani</span>
+                        </div>
+                    </a>
+                    <p class="brand-desc">Kelompok Wanita Tani yang berkomitmen untuk meningkatkan ketahanan pangan keluarga, memberdayakan perempuan, serta menciptakan peluang ekonomi.</p>
+                    
+                    <!-- BINA DESA BADGE -->
+                    <div class="bina-desa-badge">
+                        <span class="badge-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </span>
+                        <span class="badge-text">
+                            <span class="green">Kelompok 5 Bina Desa</span>
+                            <span class="separator">·</span>
+                            <span class="gold">CSR Pertamina EP Sangatta</span>
+                        </span>
+                    </div>
+                    
+                    <!-- SOCIAL MEDIA - HANYA FACEBOOK & WHATSAPP -->
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== KOLOM 2: MENU ===== -->
+                <div class="footer-nav">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="katalog.html">Katalog</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- ===== KOLOM 3: KATEGORI ===== -->
+                <div class="footer-nav">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="katalog.html?category=jamur">Jamur</a></li>
+                        <li><a href="katalog.html?category=pertanian">Pertanian</a></li>
+                        <li><a href="katalog.html?category=perikanan">Perikanan</a></li>
+                        <li><a href="katalog.html?category=peternakan">Peternakan</a></li>
+                        <li><a href="katalog.html?category=olahan">Olahan</a></li>
+                    </ul>
+                </div>
+
+                <!-- ===== KOLOM 4: KONTAK ===== -->
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li>
+                            <span class="contact-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </span>
+                            <span class="contact-text">Gang Kamarema RT 03, Dusun Danau Raya</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </span>
+                            <span class="contact-text">kampungjamursangatta@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </span>
+                            <span class="contact-text">Jam Operasional: <strong>06.00 - 21.00 WITA</strong></span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <!-- ===== FOOTER BOTTOM ===== -->
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="copyright">&copy; 2026 KWT "BERSERI". All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="#" class="legal-link">Kebijakan Privasi</a>
+                <span class="divider">|</span>
+                <a href="#" class="legal-link">Syarat & Ketentuan</a>
+                <span class="divider">|</span>
+                <span class="credit-programmer">
+                    <span class="code-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </span>
+                    <span class="name">Developed by <strong>Reisya Nazwa Anindya</strong></span>
+                </span>
+                <span class="divider">|</span>
+                <span class="bina-desa-credit">
+                    <span class="star-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </span>
+                    <span class="bina-text"><strong>Kelompok 5 Bina Desa</strong> · CSR Pertamina EP Sangatta</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <button class="back-to-top" id="backToTop">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/produk.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script>
+        // ===== VARIAN RASA - INTERAKTIF =====
+        document.addEventListener('DOMContentLoaded', function() {
+            const varianBtns = document.querySelectorAll('.varian-btn');
+            const thumbItems = document.querySelectorAll('.thumb-item');
+            const mainImage = document.getElementById('mainImage');
+            const productName = document.getElementById('productName');
+            const productDesc = document.getElementById('productDesc');
+            const varianDesc = document.getElementById('varianDesc');
+
+            // Fungsi ganti varian
+            function changeVarian(btn) {
+                // Reset semua button
+                varianBtns.forEach(b => b.classList.remove('active'));
+                thumbItems.forEach(t => t.classList.remove('active'));
+
+                // Aktifkan button yang dipilih
+                btn.classList.add('active');
+
+                // Ambil data
+                const varian = btn.dataset.varian;
+                const image = btn.dataset.image;
+                const desc = btn.dataset.desc;
+
+                // Update gambar utama
+                mainImage.src = image;
+                productName.textContent = 'Keripik Jamur Tiram ' + varian;
+                productDesc.textContent = desc;
+                varianDesc.textContent = desc;
+
+                // Update thumbnail yang sesuai
+                thumbItems.forEach(t => {
+                    if (t.dataset.varian === varian) {
+                        t.classList.add('active');
+                    }
+                });
+
+                // Update badge
+                document.querySelector('.badge-produk').textContent = varian;
+            }
+
+            // Event listener untuk varian buttons
+            varianBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    changeVarian(this);
+                });
+            });
+
+            // Event listener untuk thumbnails
+            thumbItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const varian = this.dataset.varian;
+                    const targetBtn = document.querySelector(`.varian-btn[data-varian="${varian}"]`);
+                    if (targetBtn) {
+                        changeVarian(targetBtn);
+                    }
+                });
+            });
+
+            // ===== WHATSAPP ORDER =====
+            document.getElementById('waOrderBtn').addEventListener('click', function() {
+                const varian = document.querySelector('.varian-btn.active');
+                const varianName = varian ? varian.dataset.varian : 'Original';
+                const product = 'Keripik Jamur Tiram ' + varianName;
+                const phone = '6282213467792';
+                const message = `Halo, saya tertarik dengan produk *${product}*. Apakah masih tersedia?`;
+                const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+                window.open(url, '_blank');
+            });
+        });
+    </script>
+
+
+    <script src="js/option_wheel.js"></script>
+</body>
+</html>

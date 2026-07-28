@@ -1,0 +1,110 @@
+/* ========================================
+   CSS VARIABLES - PREMIUM
+   ======================================== */
+:root {
+    /* Primary Colors - Elegant Green */
+    --primary: #1A7A3A;
+    --primary-dark: #0F592A;
+    --primary-light: #3BA861;
+    --primary-bg: #EAF5EE;
+    --primary-gradient: linear-gradient(145deg, #1A7A3A, #3BA861);
+    --primary-gradient-soft: linear-gradient(145deg, rgba(26, 122, 58, 0.08), rgba(59, 168, 97, 0.04));
+    --primary-shadow: 0 4px 30px rgba(26, 122, 58, 0.3);
+    --primary-shadow-hover: 0 8px 45px rgba(26, 122, 58, 0.4);
+    
+    /* Secondary - Deep Navy */
+    --secondary: #1A2A35;
+    --secondary-light: #2A4A55;
+    --secondary-bg: #F0F3F5;
+    --secondary-gradient: linear-gradient(145deg, #1A2A35, #2A4A55);
+    
+    /* Accent - Warm Gold */
+    --accent: #D4A02B;
+    --accent-light: #E8C84A;
+    --accent-bg: #FDF5E6;
+    --accent-gradient: linear-gradient(145deg, #D4A02B, #E8C84A);
+    
+    /* Neutral Scale */
+    --white: #FFFFFF;
+    --gray-50: #F7F9F8;
+    --gray-100: #EDF0EF;
+    --gray-200: #DCE1DF;
+    --gray-300: #BCC5C2;
+    --gray-400: #94A39E;
+    --gray-500: #6B7D77;
+    --gray-600: #4D5D57;
+    --gray-700: #2F3D38;
+    --gray-800: #1A2622;
+    --gray-900: #0A1210;
+    
+    /* Shadows */
+    --shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+    --shadow-md: 0 8px 30px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 60px rgba(0,0,0,0.10);
+    --shadow-xl: 0 30px 80px rgba(0,0,0,0.14);
+    --shadow-2xl: 0 50px 100px rgba(0,0,0,0.18);
+    --shadow-3xl: 0 70px 140px rgba(0,0,0,0.22);
+    
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+    --radius-2xl: 36px;
+    --radius-3xl: 44px;
+    --radius-full: 9999px;
+    
+    /* Typography */
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+    --font-black: 900;
+    
+    /* Container */
+    --container: 1120px;
+    --header-height: 76px;
+    
+    /* Transitions */
+    --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-fast: 0.2s var(--ease-out);
+    --transition-base: 0.4s var(--ease-out);
+    --transition-slow: 0.7s var(--ease-out);
+    --transition-spring: 0.5s var(--ease-spring);
+    --transition-bounce: 0.6s var(--ease-bounce);
+    
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+    --space-4xl: 80px;
+    --space-5xl: 100px;
+    --space-6xl: 120px;
+
+    /* ===== Font ===== */
+    --font: 'Russo One', 'Inter', 'Poppins', sans-serif;
+    --font-heading: 'Russo One', 'Inter', 'Poppins', sans-serif;
+    --font-body: 'Russo One', 'Inter', 'Poppins', sans-serif;
+    --font-button: 'Russo One', 'Inter', sans-serif;
+    
+    /* ===== Weight ===== */
+    --font-regular: 400;
+    --font-medium: 400;
+    --font-semibold: 400;
+    --font-bold: 400;
+    --font-extrabold: 400;
+    --font-black: 400;
+
+}

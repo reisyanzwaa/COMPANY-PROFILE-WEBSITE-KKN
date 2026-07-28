@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWT "BERSERI" | Kelompok Wanita Tani</title>
+
+    <!-- ===== Font Poppins ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Skranji -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/banner.css">
+
+        <style>
+        /* ===== OVERRIDE SEMUA FONT KE POPPINS ===== */
+        * {
+            font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+            font-weight: 400;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+            font-weight: 700;
+        }
+        
+        p, span, a, li, div, section, article, header, footer, nav {
+            font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+        }
+        
+        button, .btn, .btn-primary, .btn-nav, .btn-nav-primary {
+            font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+            font-weight: 600;
+        }
+        
+        input, textarea, select {
+            font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-container">
+            <div class="preloader-ring">
+                <div class="preloader-ring-inner"></div>
+            </div>
+            <div class="preloader-progress">
+                <div class="preloader-progress-fill" id="preloaderFill"></div>
+            </div>
+            <div class="preloader-dots">
+                <span></span><span></span><span></span>
+            </div>
+            <p class="preloader-label">KWT "BERSERI"</p>
+        </div>
+    </div>
+
+
+    <!-- Navbar -->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <!-- ====== BRAND ====== -->
+        <a href="index.html" class="brand">
+            <div class="brand-icon">
+                <!-- COBA SALAH SATU PATH DI BAWAH INI -->
+                <!-- Opsi 1: SVG -->
+                <img src="img/logo/kwt logo.svg" alt="KWT BERSERI">
+                <!-- Opsi 2: PNG (jika SVG bermasalah) -->
+                <!-- <img src="img/profil/LOGO KWT BERSERI.png" alt="KWT BERSERI"> -->
+            </div>
+            <div class="brand-text">
+                <span class="brand-name">KWT <span>"BERSERI"</span></span>
+                <span class="brand-sub">Kelompok Wanita Tani</span>
+            </div>
+        </a>
+
+        <!-- ====== NAV LINKS ====== -->
+        <ul class="nav-links" id="navLinks">
+            <li>
+                <a href="index.html" class="active">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1"/>
+                        </svg>
+                    </span>
+                    <span class="nav-text">Beranda</span>
+                    <span class="nav-indicator"></span>
+                </a>
+            </li>
+            <li>
+                <a href="profil.html">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </span>
+                    <span class="nav-text">Profil</span>
+                    <span class="nav-indicator"></span>
+                </a>
+            </li>
+            <li>
+                <a href="katalog.html">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2"/>
+                            <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+                        </svg>
+                    </span>
+                    <span class="nav-text">Katalog</span>
+                    <span class="nav-indicator"></span>
+                </a>
+            </li>
+            <li>
+                <a href="galeri.html">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                    </span>
+                    <span class="nav-text">Galeri</span>
+                    <span class="nav-indicator"></span>
+                </a>
+            </li>
+            <li>
+                <a href="kontak.html">
+                    <span class="nav-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                    </span>
+                    <span class="nav-text">Kontak</span>
+                    <span class="nav-indicator"></span>
+                </a>
+            </li>
+            
+            <!-- ====== MOBILE CTA ====== -->
+            <li class="mobile-cta">
+                <a href="kontak.html" class="btn-nav-mobile">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    Hubungi Kami
+                </a>
+            </li>
+        </ul>
+
+        <!-- ====== NAV RIGHT ====== -->
+        <div class="nav-right">
+            <a href="kontak.html" class="btn-nav btn-nav-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+                <span>Hubungi</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+ <!-- ======================================== -->
+<!-- BANNER SLIDESHOW - TERHUBUNG GALERI     -->
+<!-- ======================================== -->
+<section class="banner-slideshow">
+    <div class="banner-slideshow__container">
+        <div class="banner-slideshow__slides">
+            
+            <!-- ===== SLIDE 1: KWT BERSERI ===== -->
+            <div class="banner-slideshow__slide active">
+                <img src="img/logo/kwt logo.svg" alt="KWT Berseri">
+                <div class="banner-slideshow__overlay">
+                    <div class="banner-slideshow__content">
+                        <div class="banner-slideshow__badge">
+                            <span class="badge-dot"></span>
+                            <span>Kelompok Wanita Tani</span>
+                        </div>
+                        <h1>KWT <span class="text-gradient">"BERSERI"</span></h1>
+                        <p>Kelompok Wanita Tani yang berkomitmen untuk meningkatkan ketahanan pangan keluarga, memberdayakan perempuan, serta menciptakan peluang ekonomi.</p>
+                        <a href="galeri.html" class="btn-primary btn-sm">
+                            Lihat Galeri →
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== SLIDE 2: JAMUR TIRAM ===== -->
+            <div class="banner-slideshow__slide">
+                <img src="img/jamur/Jamur tiram segar.png" alt="Jamur Tiram Segar">
+                <div class="banner-slideshow__overlay">
+                    <div class="banner-slideshow__content">
+                        <span class="banner-slideshow__tag">✦ Produk Unggulan</span>
+                        <h2>Jamur Tiram <span class="text-gradient">Segar</span></h2>
+                        <p>Dibudidayakan secara organik dengan kualitas terbaik</p>
+                        <a href="galeri.html?category=jamur" class="btn-primary btn-sm">
+                            Lihat Galeri →
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== SLIDE 3: IKAN NILA ===== -->
+            <div class="banner-slideshow__slide">
+                <img src="img/perikanan/Ikan nila segar.png" alt="Ikan Nila Segar">
+                <div class="banner-slideshow__overlay">
+                    <div class="banner-slideshow__content">
+                        <span class="banner-slideshow__tag">✦ Segar & Bergizi</span>
+                        <h2>Ikan Nila <span class="text-gradient">Berkualitas</span></h2>
+                        <p>Dari kolam budidaya yang bersih dan terjaga</p>
+                        <a href="galeri.html?category=perikanan" class="btn-primary btn-sm">
+                            Lihat Galeri →
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== SLIDE 4: KERIPIK ===== -->
+            <div class="banner-slideshow__slide">
+                <img src="img/olahan/Keripik jamur tiram rasa original.png" alt="Keripik Jamur Tiram">
+                <div class="banner-slideshow__overlay">
+                    <div class="banner-slideshow__content">
+                        <span class="banner-slideshow__tag">✦ Camilan Sehat</span>
+                        <h2>Keripik Jamur <span class="text-gradient">Renyah</span></h2>
+                        <p>4 Varian rasa: Original, Balado, Coklat, Jagung Bakar</p>
+                        <a href="galeri.html?category=olahan" class="btn-primary btn-sm">
+                            Lihat Galeri →
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== SLIDE 5: SAMBAL ===== -->
+            <div class="banner-slideshow__slide">
+                <img src="img/produk/Sambal jamur tiram.png" alt="Sambal Jamur Tiram">
+                <div class="banner-slideshow__overlay">
+                    <div class="banner-slideshow__content">
+                        <span class="banner-slideshow__tag">✦ Pedas Nendang</span>
+                        <h2>Sambal Jamur <span class="text-gradient">Khas</span></h2>
+                        <p>Pedasnya pas dengan cita rasa jamur yang khas</p>
+                        <a href="galeri.html?category=olahan" class="btn-primary btn-sm">
+                            Lihat Galeri →
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tombol Navigasi -->
+        <button class="banner-slideshow__btn banner-slideshow__btn--prev" onclick="changeSlide(-1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </button>
+        <button class="banner-slideshow__btn banner-slideshow__btn--next" onclick="changeSlide(1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 6 15 12 9 18"/>
+            </svg>
+        </button>
+
+        <!-- Indikator -->
+        <div class="banner-slideshow__dots">
+            <span class="banner-slideshow__dot active" onclick="goToSlide(0)"></span>
+            <span class="banner-slideshow__dot" onclick="goToSlide(1)"></span>
+            <span class="banner-slideshow__dot" onclick="goToSlide(2)"></span>
+            <span class="banner-slideshow__dot" onclick="goToSlide(3)"></span>
+            <span class="banner-slideshow__dot" onclick="goToSlide(4)"></span>
+        </div>
+    </div>
+</section>
+
+    <main>
+        <!-- ======================================== -->
+        <!-- HERO - KWT BERSERI                       -->
+        <!-- ======================================== -->
+        <section class="hero">
+            <div class="hero-bg-image">
+                <img src="img/banner/banner ramai.png" alt="KWT Berseri">
+                <div class="hero-bg-overlay"></div>
+            </div>
+            <div class="hero-background">
+                <div class="particle-field" id="particleField"></div>
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+                <div class="orb orb-4"></div>
+                <div class="orb orb-5"></div>
+                <div class="grid-overlay"></div>
+                <div class="hero-gradient"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-layout">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="badge-dot"></span>
+                            <span>Kelompok Wanita Tani</span>
+                        </div>
+                        <h1 class="hero-title">
+                            KWT <br>
+                            <span class="text-gradient">"BERSERI"</span>
+                        </h1>
+                        <p class="hero-desc">
+                            Kelompok Wanita Tani yang berkomitmen untuk meningkatkan ketahanan pangan keluarga, 
+                            memberdayakan perempuan, serta menciptakan peluang ekonomi melalui kegiatan pertanian 
+                            dan usaha produktif.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="katalog.html" class="btn-primary btn-lg">
+                                Lihat Produk
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="profil.html" class="btn-outline btn-lg">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 8v4l3 3"/>
+                                </svg>
+                                Tentang Kami
+                            </a>
+                        </div>
+                        <div class="hero-metrics">
+                            <div class="metric">
+                                <span class="metric-number" data-count="2022">0</span>
+                                <span class="metric-label">Tahun Berdiri</span>
+                            </div>
+                            <div class="metric-divider"></div>
+                            <div class="metric">
+                                <span class="metric-number" data-count="26">0</span>
+                                <span class="metric-label">Anggota Aktif</span>
+                            </div>
+                            <div class="metric-divider"></div>
+                            <div class="metric">
+                                <span class="metric-number" data-count="5">0</span>
+                                <span class="metric-label">Divisi Usaha</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+            <div class="wave-divider">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,120 C360,80 720,120 1080,80 C1260,60 1380,70 1440,80 L1440,120 L0,120Z" fill="white"/>
+                </svg>
+            </div>
+        </section>
+        
+
+        <!-- ======================================== -->
+        <!-- FEATURES - PREMIUM EDITION              -->
+        <!-- ======================================== -->
+        <section class="features">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-tag">✦ Keunggulan</span>
+                    <h2>Meningkatkan <span class="text-gradient">Keterampilan</span></h2>
+                    <p>Kami berkomitmen memberikan yang terbaik untuk setiap anggota dan mitra</p>
+                </div>
+                <div class="features-grid">
+                    
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-number">01</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Produk Berkualitas</h3>
+                        <p>Setiap produk melalui proses seleksi dan pengolahan yang higienis untuk kualitas terbaik.</p>
+                        <a href="profil.html" class="feature-link">
+                            <span>Pelajari</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-number">02</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3>Ramah Lingkungan</h3>
+                        <p>Metode budidaya dan pengolahan yang berkelanjutan menjaga kelestarian alam.</p>
+                        <a href="profil.html" class="feature-link">
+                            <span>Pelajari</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-number">03</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Pemberdayaan Perempuan</h3>
+                        <p>Mendorong kemandirian ekonomi perempuan melalui pelatihan dan usaha produktif.</p>
+                        <a href="profil.html" class="feature-link">
+                            <span>Pelajari</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card">
+                        <div class="feature-number">04</div>
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Dukungan Penuh</h3>
+                        <p>Tim siap membantu dengan solusi terbaik untuk kebutuhan pertanian dan usaha Anda.</p>
+                        <a href="kontak.html" class="feature-link">
+                            <span>Pelajari</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- CATEGORIES - DENGAN BADGE                -->
+        <!-- ======================================== -->
+        <section class="categories">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-tag">✦ Kategori</span>
+                    <h2>Jelajahi <span class="text-gradient">Produk</span> Kami</h2>
+                    <p>Berbagai pilihan produk unggulan dari berbagai sektor</p>
+                </div>
+                <div class="categories-grid">
+                    
+                    <!-- 1. JAMUR - 1 Produk -->
+                    <a href="katalog.html?category=jamur" class="category-card">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2C8 2 4 5 4 9c0 2.5 1.5 4.5 3 5.5V16c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-1.5c1.5-1 3-3 3-5.5 0-4-4-7-8-7z"/>
+                                <path d="M9 16v2c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-2"/>
+                            </svg>
+                        </div>
+                        <div class="category-info">
+                            <h3>Jamur</h3>
+                            <span class="category-count">
+                                <span class="count-number">1</span> Produk
+                            </span>
+                        </div>
+                        <span class="category-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </span>
+                    </a>
+
+                    <!-- 2. PERIKANAN - 1 Produk -->
+                    <a href="katalog.html?category=perikanan" class="category-card">
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 12c0-1.5-1.5-3-4-3.5V7c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-1.5c2.5-.5 4-2 4-3.5z"/>
+                                <circle cx="8" cy="12" r="1.5"/>
+                                <path d="M12 7v10"/>
+                            </svg>
+                        </div>
+                        <div class="category-info">
+                            <h3>Perikanan</h3>
+                            <span class="category-count">
+                                <span class="count-number">1</span> Produk
+                            </span>
+                        </div>
+                        <span class="category-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </span>
+                    </a>
+
+                    <!-- 3. OLAHAN - 6 Produk (TERBANYAK) -->
+                    <a href="katalog.html?category=olahan" class="category-card">
+                        <!-- BADGE ★ TERBANYAK -->
+                        <span class="category-badge">★ Terbanyak</span>
+                        <div class="category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 2v20M16 2v20M2 8h20M2 16h20"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                        </div>
+                        <div class="category-info">
+                            <h3>Olahan</h3>
+                            <span class="category-count">
+                                <span class="count-number">6</span> Produk
+                            </span>
+                        </div>
+                        <span class="category-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+<!-- ======================================== -->
+<!-- PRODUCTS - ULTIMATE PREMIUM              -->
+<!-- ======================================== -->
+<section class="products">
+    <div class="container">
+        <div class="section-head">
+            <span class="section-tag">✦ Produk Unggulan</span>
+            <h2>Pilihan <span class="text-gradient">Terbaik</span> Untuk Anda</h2>
+            <p>Produk-produk pilihan dengan kualitas terbaik dari KWT "BERSERI"</p>
+        </div>
+
+        <!-- Slot Cards - Featured Products -->
+        <div class="slot-cards">
+            <!-- Card 1 - Jamur Tiram Segar -->
+            <div class="slot-card slot-card--featured">
+                <div class="slot-card__badge">Best Seller</div>
+                <div class="slot-card__image">
+                    <img src="img/jamur/Jamur tiram segar.png" alt="Jamur Tiram Segar">
+                    <div class="slot-card__overlay">
+                        <span class="slot-card__quick-view">Lihat Cepat</span>
+                    </div>
+                </div>
+                <div class="slot-card__content">
+                    <span class="slot-card__category">Jamur</span>
+                    <h3 class="slot-card__title">Jamur Tiram Segar</h3>
+                    <div class="slot-card__rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(125)</span>
+                    </div>
+                    <p class="slot-card__description">Jamur tiram segar berkualitas tinggi, <strong>dibudidayakan secara organik</strong>.</p>
+                    <div class="slot-card__footer">
+                        <a href="detail_produk.html?id=1" class="btn-primary btn-sm">Lihat Detail</a>
+                        <button class="btn-wa btn-sm" onclick="showWaPopup('Jamur Tiram Segar')">Pesan via WA</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 - Ikan Nila Segar -->
+            <div class="slot-card">
+                <div class="slot-card__badge slot-card__badge--new">New</div>
+                <div class="slot-card__image">
+                    <img src="img/perikanan/Ikan nila segar.png" alt="Ikan Nila Segar">
+                    <div class="slot-card__overlay">
+                        <span class="slot-card__quick-view">Lihat Cepat</span>
+                    </div>
+                </div>
+                <div class="slot-card__content">
+                    <span class="slot-card__category">Perikanan</span>
+                    <h3 class="slot-card__title">Ikan Nila Segar</h3>
+                    <div class="slot-card__rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(89)</span>
+                    </div>
+                    <p class="slot-card__description">Ikan nila segar dari <strong>kolam budidaya berkualitas</strong>, daging putih bersih.</p>
+                    <div class="slot-card__footer">
+                        <a href="detail_produk.html?id=2" class="btn-primary btn-sm">Lihat Detail</a>
+                        <button class="btn-wa btn-sm" onclick="showWaPopup('Ikan Nila Segar')">Pesan via WA</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 - Keripik Jamur Tiram -->
+            <div class="slot-card">
+                <div class="slot-card__badge slot-card__badge--sale">Sale</div>
+                <div class="slot-card__image">
+                    <img src="img/olahan/Keripik jamur tiram rasa original.png" alt="Keripik Jamur Tiram">
+                    <div class="slot-card__overlay">
+                        <span class="slot-card__quick-view">Lihat Cepat</span>
+                    </div>
+                </div>
+                <div class="slot-card__content">
+                    <span class="slot-card__category">Olahan</span>
+                    <h3 class="slot-card__title">Keripik Jamur Tiram</h3>
+                    <div class="slot-card__rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(67)</span>
+                    </div>
+                    <p class="slot-card__description"><span class="highlight-gold">4 Varian rasa</span>: <strong>Original</strong>, <span class="highlight-green">Balado</span>, <span class="highlight-gold">Coklat</span>, <strong>Jagung Bakar</strong>.</p>
+                    <div class="slot-card__footer">
+                        <a href="detail_produk.html?id=3" class="btn-primary btn-sm">Lihat Detail</a>
+                        <button class="btn-wa btn-sm" onclick="showWaPopup('Keripik Jamur Tiram')">Pesan via WA</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 - Sambal Jamur Tiram -->
+            <div class="slot-card">
+                <div class="slot-card__badge slot-card__badge--hot">HOT</div>
+                <div class="slot-card__image">
+                    <img src="img/produk/Sambal jamur tiram.png" alt="Sambal Jamur Tiram">
+                    <div class="slot-card__overlay">
+                        <span class="slot-card__quick-view">Lihat Cepat</span>
+                    </div>
+                </div>
+                <div class="slot-card__content">
+                    <span class="slot-card__category">Olahan</span>
+                    <h3 class="slot-card__title">Sambal Jamur Tiram</h3>
+                    <div class="slot-card__rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(156)</span>
+                    </div>
+                    <p class="slot-card__description">Sambal pedas berbahan dasar jamur tiram dengan <span class="highlight-red">cita rasa khas</span>.</p>
+                    <div class="slot-card__footer">
+                        <a href="detail_produk.html?id=7" class="btn-primary btn-sm">Lihat Detail</a>
+                        <button class="btn-wa btn-sm" onclick="showWaPopup('Sambal Jamur Tiram')">Pesan via WA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Grid (dari produk.js) -->
+        <div class="products-grid" id="productGrid"></div>
+
+        <div class="products-footer">
+            <a href="katalog.html" class="btn-primary btn-lg">
+                Lihat Semua Produk
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- ======================================== -->
+<!-- TESTIMONIALS - DENGAN SVG ICONS         -->
+<!-- ======================================== -->
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonials-header">
+            <span class="testimonials-tag">✦ Testimoni</span>
+            <h2>Apa Kata <span class="text-gradient">Mereka</span></h2>
+            <p>Kata-kata dari pelanggan yang telah merasakan kelezatan produk kami</p>
+        </div>
+        <div class="testimonials-grid">
+            
+            <!-- Testimoni 1 - Keripik Jamur -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <blockquote>
+                    "Keripik jamur tiramnya <strong>renyah banget</strong>! Rasanya gurih dan nggak bikin eneg. Cocok buat camilan keluarga. <strong>Favorite saya rasa balado</strong>, pedasnya pas!"
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>AF</span>
+                    </div>
+                    <div class="author-info">
+                        <h4>Ahmad Fauzi</h4>
+                        <span class="author-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                            Pecinta Keripik
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimoni 2 - Ikan Nila (Featured) -->
+            <div class="testimonial-card featured">
+                <div class="testimonial-badge">⭐ Populer</div>
+                <div class="testimonial-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <blockquote>
+                    "Ikan nilanya <strong>segar banget</strong>! Dagingnya putih bersih, nggak amis, dan teksturnya <strong>lembut kenyal</strong>. Saya pakai buat ikan bakar sama pecel, hasilnya <strong>juara</strong>! Langganan saya udah 3 bulan ini."
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>SR</span>
+                    </div>
+                    <div class="author-info">
+                        <h4>Siti Rahma</h4>
+                        <span class="author-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 12c0-1.5-1.5-3-4-3.5V7c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-1.5c2.5-.5 4-2 4-3.5z"/>
+                                <circle cx="8" cy="12" r="1.5"/>
+                                <path d="M12 7v10"/>
+                            </svg>
+                            Pengusaha Kuliner
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimoni 3 - Sambal Jamur + Madu -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <blockquote>
+                    "Sambal jamur tiramnya <strong>pedas nendang</strong> dan aroma jamurnya terasa banget. Jadi andalan saya buat teman makan! <strong>Madu kelulutnya juga mantap</strong> buat kesehatan, diminum pagi hari <strong>badan jadi segar</strong>."
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>DN</span>
+                    </div>
+                    <div class="author-info">
+                        <h4>Dewi Ningsih</h4>
+                        <span class="author-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            Pelanggan Setia
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimoni 4 - Jamur Tiram Segar -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <blockquote>
+                    "Jamur tiram segar dari KWT Berseri <strong>kualitasnya terbaik</strong>! Saya pakai buat masakan sehari-hari, teksturnya <strong>kenyal dan segar</strong>. Nggak pernah kecewa sama jamurnya, <strong>selalu fresh</strong> setiap pesan."
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>BS</span>
+                    </div>
+                    <div class="author-info">
+                        <h4>Budi Santoso</h4>
+                        <span class="author-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2C8 2 4 5 4 9c0 2.5 1.5 4.5 3 5.5V16c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-1.5c1.5-1 3-3 3-5.5 0-4-4-7-8-7z"/>
+                                <path d="M9 16v2c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-2"/>
+                            </svg>
+                            Chef Rumahan
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimoni 5 - Keripik Coklat -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <blockquote>
+                    "Keripik jamur tiram rasa coklatnya <strong>enak banget</strong>! Manisnya pas dan renyah. Anak-anak saya <strong>suka banget</strong>, jadi camilan favorit baru di rumah. <strong>Rekomendasi buat yang suka manis</strong>!"
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>RW</span>
+                    </div>
+                    <div class="author-info">
+                        <h4>Rina Wati</h4>
+                        <span class="author-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="2"/>
+                                <path d="M8 2v20M16 2v20M2 8h20M2 16h20"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                            Ibu Rumah Tangga
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimoni 6 - Keripik Jagung Bakar -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <blockquote>
+                    "Keripik jagung bakarnya <strong>gurih dan renyah</strong>, rasa jagungnya <strong>terasa banget</strong>. Cocok banget buat teman ngeteh atau ngopi sore. <strong>Produk UMKM lokal yang patut dibanggakan</strong>!"
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <span>HP</span>
+                    </div>
+                    <div class="author-info">
+                        <h4>Hendra Pratama</h4>
+                        <span class="author-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                            Penikmat Kopi
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!-- ======================================== -->
+        <!-- CTA         -->
+        <!-- ======================================== -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="cta-content">
+                        <span class="cta-tag">✦ Belanja Sekarang</span>
+                        <h2>Dapatkan <span class="text-gradient">Produk Segar</span> Langsung dari Petani!</h2>
+                        <p class="cta-desc">
+                            <strong>Jamur tiram segar, ikan nila berkualitas, dan olahan keripik renyah</strong> 
+                            siap untuk Anda. <strong>Harga terjangkau, kualitas terjamin!</strong> 
+                            Pesan sekarang dan rasakan kesegaran produk kami.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="kontak.html" class="btn-primary btn-lg">
+                                Pesan Sekarang
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="katalog.html" class="btn-outline-light btn-lg">
+                                Lihat Produk
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+    <!-- DECORATIVE -->
+    <div class="footer-strip"></div>
+    <div class="glow-orb glow-orb--1"></div>
+    <div class="glow-orb glow-orb--2"></div>
+    <div class="grid-pattern"></div>
+
+    <!-- FOOTER TOP -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- ===== KOLOM 1: BRAND & DESKRIPSI ===== -->
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <div class="brand-icon">
+                            <img src="img/profil/LOGO KWT BERSERI.png" alt="KWT Berseri">
+                        </div>
+                        <div class="brand-text">
+                            <span class="brand-name">KWT <span class="highlight">"BERSERI"</span></span>
+                            <span class="brand-sub">Kelompok Wanita Tani</span>
+                        </div>
+                    </a>
+                    <p class="brand-desc">Kelompok Wanita Tani yang berkomitmen untuk meningkatkan ketahanan pangan keluarga, memberdayakan perempuan, serta menciptakan peluang ekonomi.</p>
+                    
+                    <!-- BINA DESA BADGE -->
+                    <div class="bina-desa-badge">
+                        <span class="badge-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </span>
+                        <span class="badge-text">
+                            <span class="green">Kelompok 5 Bina Desa</span>
+                            <span class="separator">·</span>
+                            <span class="gold">CSR Pertamina EP Sangatta</span>
+                        </span>
+                    </div>
+                    
+                    <!-- SOCIAL MEDIA - HANYA FACEBOOK & WHATSAPP -->
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ===== KOLOM 2: MENU ===== -->
+                <div class="footer-nav">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="katalog.html">Katalog</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- ===== KOLOM 3: KATEGORI ===== -->
+                <div class="footer-nav">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="katalog.html?category=jamur">Jamur</a></li>
+                        <li><a href="katalog.html?category=pertanian">Pertanian</a></li>
+                        <li><a href="katalog.html?category=perikanan">Perikanan</a></li>
+                        <li><a href="katalog.html?category=peternakan">Peternakan</a></li>
+                        <li><a href="katalog.html?category=olahan">Olahan</a></li>
+                    </ul>
+                </div>
+
+                <!-- ===== KOLOM 4: KONTAK ===== -->
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li>
+                            <span class="contact-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </span>
+                            <span class="contact-text">Gang Kamarema RT 03, Dusun Danau Raya</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </span>
+                            <span class="contact-text">kampungjamursangatta@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </span>
+                            <span class="contact-text">Jam Operasional: <strong>06.00 - 21.00 WITA</strong></span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- ===== FOOTER BOTTOM ===== -->
+<div class="footer-bottom">
+    <div class="container">
+        <p class="copyright">&copy; 2026 KWT "BERSERI". All Rights Reserved.</p>
+        <div class="footer-legal">
+            <a href="#" class="legal-link">Kebijakan Privasi</a>
+            <span class="divider">|</span>
+            <a href="#" class="legal-link">Syarat &amp; Ketentuan</a>
+            <span class="divider">|</span>
+            <span class="credit-programmer">
+                <span class="code-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"/>
+                        <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                </span>
+                <span class="name">Developed by 
+                    <a href="profil_diri_reisya.html" class="dev_name_footer">
+                        <strong>Reisya Nazwa Anindya</strong>
+                    </a>
+                </span>
+            </span>
+            <span class="divider">|</span>
+            <span class="bina-desa-credit">
+                <span class="star-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </span>
+                <span class="bina-text"><strong>Kelompok 5 Bina Desa</strong> · CSR Pertamina EP Sangatta</span>
+            </span>
+        </div>
+    </div>
+</div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/produk.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/gradual_blur.js"></script>
+    <script>
+      // Buat elemen gradual blur
+      var blurElement = createGradualBlur({
+        target: 'parent',
+        position: 'bottom',
+        height: '6rem',
+        strength: 2,
+        divCount: 5,
+        curve: 'bezier',
+        exponential: true,
+        opacity: 1
+      });
+      
+      // Tambahkan ke section
+      document.querySelector('section').appendChild(blurElement);
+    </script>
+</body>
+</html>

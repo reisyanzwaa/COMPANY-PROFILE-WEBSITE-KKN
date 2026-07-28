@@ -1,0 +1,268 @@
+/* ========================================
+   SCROLL ANIMATIONS
+   ======================================== */
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.9s var(--ease-out);
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.9s var(--ease-out);
+}
+
+.fade-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.9s var(--ease-out);
+}
+
+.fade-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-up {
+    opacity: 0;
+    transform: scale(0.92);
+    transition: all 0.9s var(--ease-out);
+}
+
+.scale-up.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ========================================
+   STAGGER
+   ======================================== */
+.stagger > * {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s var(--ease-out);
+}
+
+.stagger.visible > *:nth-child(1) { transition-delay: 0.05s; opacity: 1; transform: translateY(0); }
+.stagger.visible > *:nth-child(2) { transition-delay: 0.1s; opacity: 1; transform: translateY(0); }
+.stagger.visible > *:nth-child(3) { transition-delay: 0.15s; opacity: 1; transform: translateY(0); }
+.stagger.visible > *:nth-child(4) { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
+.stagger.visible > *:nth-child(5) { transition-delay: 0.25s; opacity: 1; transform: translateY(0); }
+.stagger.visible > *:nth-child(6) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
+.stagger.visible > *:nth-child(7) { transition-delay: 0.35s; opacity: 1; transform: translateY(0); }
+.stagger.visible > *:nth-child(8) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
+
+/* ========================================
+   GLOW PULSE
+   ======================================== */
+.glow-pulse {
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(26, 122, 58, 0.1); }
+    50% { box-shadow: 0 0 50px rgba(26, 122, 58, 0.2); }
+}
+
+/* ========================================
+   SHIMMER
+   ======================================== */
+.shimmer {
+    background: linear-gradient(90deg, var(--gray-100) 25%, var(--gray-50) 50%, var(--gray-100) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.8s ease-in-out infinite;
+    border-radius: var(--radius-sm);
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* ========================================
+   COUNTER
+   ======================================== */
+.counter-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s var(--ease-out);
+}
+
+.counter-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   PROGRESS
+   ======================================== */
+.progress-track {
+    width: 100%;
+    height: 4px;
+    background: var(--gray-100);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.progress-track .progress-fill {
+    height: 100%;
+    background: var(--primary-gradient);
+    border-radius: var(--radius-full);
+    width: 0;
+    transition: width 1.8s var(--ease-out);
+}
+
+.progress-track .progress-fill.animated {
+    width: var(--progress, 0%);
+}
+
+/* ========================================
+   TYPEWRITER
+   ======================================== */
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid var(--primary);
+    animation: typewriter 3s steps(40) 1s forwards, blink 0.8s infinite;
+    width: 0;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* ========================================
+   REVEAL
+   ======================================== */
+.reveal {
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 1.2s var(--ease-out);
+}
+
+.reveal.visible {
+    clip-path: inset(0 0 0 0);
+}
+
+/* ========================================
+   TILT
+   ======================================== */
+.tilt {
+    transition: transform 0.6s var(--ease-out);
+}
+
+.tilt:hover {
+    transform: perspective(800px) rotateX(2deg) rotateY(4deg) scale(1.02);
+}
+
+/* ========================================
+   SLIDE UP
+   ======================================== */
+.slide-up {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s var(--ease-out);
+}
+
+.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   FADE ZOOM
+   ======================================== */
+.fade-zoom {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+    transition: all 0.8s var(--ease-out);
+}
+
+.fade-zoom.visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* ========================================
+   PARALLAX
+   ======================================== */
+.parallax {
+    transition: transform 0.1s linear;
+    will-change: transform;
+}
+
+/* ========================================
+   ANIMASI YANG TERSISA
+   ======================================== */
+
+/* Spin untuk preloader */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Float untuk hero image */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Pulse dot */
+@keyframes pulse-dot {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(0.6); opacity: 0.6; }
+}
+
+/* Scroll down */
+@keyframes scrollDown {
+    0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+    50% { transform: translateX(-50%) translateY(28px); opacity: 0; }
+}
+
+/* Orb float */
+@keyframes orbFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(60px, -60px) scale(1.05); }
+    50% { transform: translate(-50px, 50px) scale(0.95); }
+    75% { transform: translate(50px, 60px) scale(1.02); }
+}
+
+/* Fade in */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Preloader progress */
+@keyframes preloaderProgress {
+    0% { width: 0%; }
+    50% { width: 70%; }
+    100% { width: 100%; }
+}
+
+/* Dot bounce untuk preloader */
+@keyframes dotBounce {
+    0%, 80%, 100% { transform: scale(0); opacity: 0.3; }
+    40% { transform: scale(1); opacity: 1; }
+}
+
+
