@@ -1099,7 +1099,7 @@ body::before {
 }
 
 /* ================================================================ */
-/* ACTIONS / BUTTONS                                                */
+/* ACTIONS / BUTTONS - FULLY RESPONSIVE                            */
 /* ================================================================ */
 
 .profile-actions {
@@ -1109,51 +1109,20 @@ body::before {
     animation: actionFade 0.8s ease 0.9s forwards;
     opacity: 0;
     transform: translateY(20px);
+    flex-wrap: wrap;
 }
 
 @keyframes actionFade {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== Large Desktop ===== */
-@media (min-width: 1441px) {
-    .profile-actions { gap: 18px; }
-    .btn-back, .btn-home { padding: 14px 40px; font-size: 0.8rem; }
-    .btn-back svg, .btn-home svg { width: 18px; height: 18px; }
-}
-
-/* ===== Desktop & Laptop ===== */
-@media (min-width: 769px) and (max-width: 1440px) {
-    .btn-back, .btn-home { padding: 12px 32px; font-size: 0.7rem; }
-}
-
-/* ===== Tablet ===== */
-@media (min-width: 481px) and (max-width: 768px) {
-    .profile-actions { gap: 12px; }
-    .btn-back, .btn-home { padding: 10px 24px; font-size: 0.65rem; }
-}
-
-/* ===== Mobile ===== */
-@media (max-width: 480px) {
-    .profile-actions { 
-        flex-direction: column; 
-        align-items: center; 
-        gap: 10px; 
-    }
-    .btn-back, .btn-home { 
-        width: 100%; 
-        max-width: 220px; 
-        justify-content: center; 
-        padding: 10px 20px; 
-        font-size: 0.6rem; 
-    }
-}
-
 /* ===== Button Back ===== */
 .btn-back {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    padding: 12px 32px;
     background: var(--bg-glass);
     border: 1px solid var(--border-glass);
     border-radius: var(--radius-full);
@@ -1166,6 +1135,8 @@ body::before {
     transition: var(--transition-smooth);
     cursor: pointer;
     position: relative;
+    min-height: 48px;
+    white-space: nowrap;
 }
 
 .btn-back::before {
@@ -1199,8 +1170,11 @@ body::before {
 }
 
 .btn-back svg {
+    width: 18px;
+    height: 18px;
     stroke: currentColor;
     transition: var(--transition-smooth);
+    flex-shrink: 0;
 }
 .btn-back:hover svg { transform: translateX(-4px); }
 
@@ -1208,7 +1182,9 @@ body::before {
 .btn-home {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    padding: 12px 32px;
     background: linear-gradient(135deg, var(--primary), var(--primary-light), var(--primary-lighter));
     background-size: 300% 300%;
     animation: btnGradient 5s ease-in-out infinite;
@@ -1225,6 +1201,8 @@ body::before {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    min-height: 48px;
+    white-space: nowrap;
 }
 
 .btn-home::before {
@@ -1257,8 +1235,11 @@ body::before {
 }
 
 .btn-home svg {
+    width: 18px;
+    height: 18px;
     stroke: var(--text-white);
     transition: var(--transition-smooth);
+    flex-shrink: 0;
 }
 .btn-home:hover svg { transform: translateX(4px); }
 
@@ -1268,33 +1249,193 @@ body::before {
 }
 
 /* ================================================================ */
-/* RESPONSIVE - ORIENTATION (LANDSCAPE)                            */
+/* RESPONSIVE - TABLET (481px - 768px)                             */
 /* ================================================================ */
 
-@media (max-height: 700px) and (orientation: landscape) {
-    .profile-card {
-        max-height: 90vh;
-        padding: 20px 24px 18px;
+@media (max-width: 768px) {
+    .profile-actions {
+        gap: 12px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    .profile-avatar { width: 70px; height: 70px; margin: 0 auto 10px; }
-    .profile-name { font-size: 1.2rem; }
-    .profile-role { font-size: 0.45rem; letter-spacing: 2px; margin-bottom: 4px; }
-    .profile-status { font-size: 0.4rem; padding: 3px 12px 3px 10px; }
-    .profile-section { margin-bottom: 12px; }
-    .profile-section-title { font-size: 0.5rem; margin-bottom: 6px; padding-bottom: 4px; }
-    .profile-text { font-size: 0.7rem; line-height: 1.5; }
-    .profile-text p { margin-bottom: 4px; }
-    .profile-info-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
-    .profile-info-item { padding: 6px 10px; }
-    .profile-info-item .label { font-size: 0.3rem; }
-    .profile-info-item .label svg { width: 10px; height: 10px; }
-    .profile-info-item .value { font-size: 0.55rem; padding-left: 14px; }
-    .profile-social { gap: 8px; margin-bottom: 12px; }
-    .profile-social a { width: 30px; height: 30px; }
-    .profile-social a svg { width: 13px; height: 13px; }
-    .profile-actions { gap: 8px; }
-    .btn-back, .btn-home { padding: 6px 16px; font-size: 0.5rem; }
-    .btn-back svg, .btn-home svg { width: 12px; height: 12px; }
+    
+    .btn-back,
+    .btn-home {
+        padding: 10px 24px;
+        font-size: 0.65rem;
+        min-height: 44px;
+        flex: 1 1 auto;
+        min-width: 120px;
+        max-width: 200px;
+    }
+    
+    .btn-back svg,
+    .btn-home svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* ================================================================ */
+/* RESPONSIVE - MOBILE LARGE (376px - 480px)                       */
+/* ================================================================ */
+
+@media (max-width: 480px) {
+    .profile-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .btn-back,
+    .btn-home {
+        width: 100%;
+        max-width: 260px;
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 0.6rem;
+        min-height: 46px;
+        white-space: nowrap;
+    }
+    
+    .btn-back svg,
+    .btn-home svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* ================================================================ */
+/* RESPONSIVE - MOBILE SMALL (320px - 375px)                       */
+/* ================================================================ */
+
+@media (max-width: 375px) {
+    .profile-actions {
+        gap: 8px;
+    }
+    
+    .btn-back,
+    .btn-home {
+        max-width: 200px;
+        padding: 10px 16px;
+        font-size: 0.55rem;
+        min-height: 40px;
+        gap: 6px;
+        letter-spacing: 1px;
+    }
+    
+    .btn-back svg,
+    .btn-home svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* ================================================================ */
+/* RESPONSIVE - EXTRA SMALL (≤319px)                               */
+/* ================================================================ */
+
+@media (max-width: 319px) {
+    .btn-back,
+    .btn-home {
+        max-width: 160px;
+        padding: 8px 12px;
+        font-size: 0.5rem;
+        min-height: 36px;
+        gap: 4px;
+        letter-spacing: 0.5px;
+    }
+    
+    .btn-back svg,
+    .btn-home svg {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* ================================================================ */
+/* RESPONSIVE - LANDSCAPE (max-height: 500px)                      */
+/* ================================================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .profile-actions {
+        gap: 8px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .btn-back,
+    .btn-home {
+        padding: 6px 16px;
+        font-size: 0.5rem;
+        min-height: 32px;
+        min-width: 100px;
+        max-width: 160px;
+    }
+    
+    .btn-back svg,
+    .btn-home svg {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* ================================================================ */
+/* RESPONSIVE - TABLET PORTRAIT (481px - 600px)                    */
+/* ================================================================ */
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .profile-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .btn-back,
+    .btn-home {
+        flex: 0 1 auto;
+        min-width: 130px;
+        max-width: 200px;
+        padding: 10px 20px;
+        font-size: 0.62rem;
+    }
+}
+
+/* ================================================================ */
+/* RESPONSIVE - DESKTOP (769px - 1024px)                           */
+/* ================================================================ */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .btn-back,
+    .btn-home {
+        padding: 11px 28px;
+        font-size: 0.68rem;
+        min-height: 46px;
+    }
+}
+
+/* ================================================================ */
+/* RESPONSIVE - LARGE DESKTOP (1441px+)                            */
+/* ================================================================ */
+
+@media (min-width: 1441px) {
+    .profile-actions {
+        gap: 18px;
+    }
+    
+    .btn-back,
+    .btn-home {
+        padding: 14px 40px;
+        font-size: 0.8rem;
+        min-height: 56px;
+    }
+    
+    .btn-back svg,
+    .btn-home svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 /* ================================================================ */
@@ -1302,29 +1443,19 @@ body::before {
 /* ================================================================ */
 
 @media print {
-    body { background: white; padding: 0; }
-    .orb, .particles { display: none; }
-    .profile-card { 
-        background: white; 
-        box-shadow: none; 
-        border: 1px solid #ddd; 
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-        max-height: none;
-        overflow: visible;
+    .btn-back,
+    .btn-home {
+        border: 1px solid #ddd;
+        color: #333;
+        background: #f5f5f5;
+        min-height: auto;
+        padding: 8px 20px;
     }
-    .profile-card::before { display: none; }
-    .profile-name { color: #000; }
-    .profile-name .highlight { -webkit-text-fill-color: #2d8f5e; }
-    .profile-role { color: #666; }
-    .profile-status { color: #2d8f5e; border-color: #2d8f5e; }
-    .profile-text { color: #333; }
-    .profile-text strong { color: #000; }
-    .profile-section-title { color: #666; border-color: #ddd; }
-    .profile-info-item { background: #f5f5f5; border-color: #ddd; }
-    .profile-info-item .value { color: #333; }
-    .profile-social a { border-color: #ddd; color: #666; }
-    .btn-back, .btn-home { border: 1px solid #ddd; color: #333; background: #f5f5f5; }
-    .btn-home { background: #2d8f5e; color: white; }
-    .btn-home::before { display: none; }
+    .btn-home {
+        background: #2d8f5e;
+        color: white;
+    }
+    .btn-home::before {
+        display: none;
+    }
 }
